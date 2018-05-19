@@ -1,0 +1,100 @@
+package Projekt_Server;
+import java.io.*;
+import java.net.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.HashMap;
+ 
+ 
+public class CreateDB {
+ 
+       public static void main(String[] args) throws ClassNotFoundException {
+             try {
+                    Class.forName("org.sqlite.JDBC");
+ 
+                    Connection connection = DriverManager.getConnection("jdbc:sqlite:first.db");
+ 
+                    Statement statement = connection.createStatement();
+                    statement.setQueryTimeout(30); // set timeout to 30 sec.
+ 
+                    statement.executeUpdate("DROP TABLE IF EXISTS customer");
+                    statement.executeUpdate(
+                                "CREATE TABLE customer (customerId STRING IDENTITY PRIMARY KEY, firstname STRING, lastname STRING, phone STRING,"
+                                              + "notes STRING, email STRING, mobile STRING, phoneBusi STRING, emailBusi STRING, time String,"
+                                              + "apartment STRING, FOREIGN KEY (apartment) REFERENCES apartment(apartmentId))");
+ 
+                 /*   statement.executeUpdate(
+                               "INSERT INTO customer values" + "('Peter Meier', '1234',"
+                                              + " 'keine notes', 'email1', '2345', 'busiPhone', 'busiE', '2018-05-30 13:00')"); */
+                    
+                    
+                /*    statement.executeUpdate(
+                    			"INSERT INTO customer values" + "('Hans Müller', '1234',"
+                                         + " 'keine notes', 'email2', '5678', 'busiPhone', 'busiE', '2018-05-30 13:30')"); */
+                    
+                    // statement.executeUpdate("UPDATE person SET name='Peter' WHERE id='1'");
+                    // statement.executeUpdate("DELETE FROM person WHERE id='1'");
+ 
+                    statement.executeUpdate(
+                    		"CREATE TABLE apartment (apartmentId STRING, address STRING, addition STRING, zip STRING, city STRING, counterNr STRING");
+                    
+                    // propmanage = Property management/ Hausverwaltung
+                    statement.executeUpdate(
+                    		"CREATE TABLE propmanage (manageId STRING, email STRING, phone STRING, contact STRING, charges STRING, company STRING ");
+                    
+                    //Ablesehistorie
+                    statement.executeUpdate(
+                    		"CREATE TABLE readinghistory (readingId STRING, readingdate STRING, countNow StRING, countDueDate STRING, dueDate STRING, payed STRING");
+                    
+                    //Zählerexemplar
+                    statement.executeUpdate(
+                    		"CREATE TABLE counterexemplar (exemplarId STRING, installedDate STRING,)");
+                    
+                    
+                    //Zählertyp
+                    statement.executeUpdate(
+                    		"CREATE TABLE countertype (typeId STRING, name STRING, funk STRING)");
+                    
+                    //Mitarbeiter
+                    statement.executeUpdate(
+                    		"CREATE TABLE staff (emplId STRING, firstname STRING, lastname STRING, licenceplate STRING, driverId STRING, "
+                    		+ "address STRING, city STRING, zip STRING, birthdate STRING)");
+                    
+                    //Emlp_Bezirk
+                    statement.executeUpdate(
+                    		"CREATE TABLE staffRegion (fremdschlüssel mitarbeiter und bezirk");
+                    
+                    //Bezirk
+                    statement.executeUpdate(
+                    		"CREATE TABLE region (name STRING, numberAppartments STRING)");
+                    
+                    //Termin
+                    statement.executeUpdate(
+                    		"CREATE TABLE appointment (appointmentId STRING, status STRING, date STRING, timeFrom STRING, timeTo STRING,"
+                    		+ " appPerceived STIRNG, appNumber STRING, custonerNotice STRING)");
+                    
+                    //Aufgaben
+                    statement.executeUpdate(
+                    		"CREATE TABLE task (taskclass STRING, price STRING, description STRING, material STRING, timeneeded STRING)");
+                    
+                    
+                    //Aufgaben
+                    
+                    
+                    
+                    
+                    
+                    
+                    // resultSet = statement.executeQuery("SELECT * from customer");
+                    // while (resultSet.next()) {
+             } catch (Exception e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+             }
+       }
+}
+ 
