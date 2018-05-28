@@ -55,10 +55,7 @@ In diesem Ordner müssen sich zwei Unterordner befinden, einmal "libs" und einmal
 
 Wichtig für die App ist jedoch, dass im "libs" Ordner die Datei "gson-2.6.2.jar" liegt.
 
-Sollte diese Datei !NICHT! im Ordner liegen, kann diese unter der folgenden URl heruntergeladen werden:
-
-https://repo1.maven.org/maven2/com/google/code/gson/gson/2.6.2/
-
+Sollte die Datei nicht im angegebenen Ordner liegen, ist sie manuell über das Git herunterzuladen und dort zu platzieren.
 
 Beim ersten Start von Android Studio kann es vorkommen, dass die Applikation diverse Daten aus dem Internet nachlädt.
 
@@ -83,7 +80,6 @@ Wählen Sie hier bitte unter "Phone" das Nexus 6P mit der API Version 27 (Oreo) a
 Die App wird nun auf dem ausgewählten Gerät simuliert und kann wie ein normales Handy bedient werden.
 
 Bitte beachten Sie, dass gerade das Starten des Emulators am Anfang einige Minuten in Anspruch nehmen kann.
-
 
 
 
