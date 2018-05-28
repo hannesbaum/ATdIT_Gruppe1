@@ -1,13 +1,15 @@
 
 -----------------------------------------------------------------------------------
 
-Datei in Eclipse öffnen:
+Datei in Eclipse öffnen (in unserem Testbeispiel wurde Eclipse Oxygen genutzt, Kompatibilität mit älternen Versionen ist nicht garantiert):
 
-Der simulierter Server muss parallel in einem Programm wie Eclipse geöffnet werden.
+Der simulierte Server muss parallel in einem Programm wie Eclipse geöffnet werden.
 
-Auszuwählen ist hierbei der Ordner <<Ordername Server>>
+Auszuwählen ist hierbei der Ordner Server_v0.9.zip
 
-Zunächst muss die Datenbank erzeugt werden, dazu muss lediglich die Datei CreateDB.java ausgeführt werden.
+In der Unterstruktur ist für die Ausführung das Projekt unter src/Projekt_Server relevant.
+
+Zunächst muss die Datenbank erzeugt werden, dazu muss lediglich die Datei CreateDB2.java ausgeführt werden.
 
 Bei einer erfolgreichen Ausführung werden in der Konsole einige Dateninhalte ausgegeben.
 
@@ -23,9 +25,13 @@ Hierzu müssen die drei folgenden jar.-Dateien dem Buildpath des Projektes hinzug
 - sqlite-jdbc-3.21.0.jar
 - gson-2.6.2.jar
 
-Alle Dateien befinden sich im Projektordner!
+Alle Dateien befinden sich im Github.
 
-Nachdem der Server gestartet wurde kann die App in AnroidStudio gestartet werden und die Verbindung wird aufgebaut.
+Um die Bibliotheken hinzuzufügen, einfach in Eclipse per Rechtsklick unter BuildPath -> Configure Build Path den Reiter Libraries auswählen und über
+
+"Add External JARs" die SQLite und Gson dateien hinzufügen. JUnit 5 ist in Eclipse schon vorhanden.
+
+Nachdem der Server gestartet wurde kann die App in AndroidStudio gestartet werden und die Verbindung wird aufgebaut.
 
 
 -----------------------------------------------------------------------------------
