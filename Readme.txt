@@ -47,7 +47,7 @@ Installieren Sie AndroidStudio indem der angegebene Guide durchlaufen wird.
 
 Zum Öffnen der App in AdroidStudio müssen folgende Grudlagen gegeben sein:
 
-Der Ordner <<Ordnername für App-Code>> muss entpackt und lokal gespeichert werden.
+Der Ordner App_v0.9.zip muss entpackt und lokal gespeichert werden.
 
 In diesem Ordner müssen sich zwei Unterordner befinden, einmal "libs" und einmal "src"
 
