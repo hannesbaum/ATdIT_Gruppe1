@@ -3,6 +3,7 @@ Repository of group 1 (designed for our persona reading the meters in an apartme
 Look here for  our Java coding for Android Studio, ER diagramms, images of our paper prototypes, information regarding our persona and other research. 
 
 Readme.txt - Installation guide Android Studio and Setup of the Project
+
 App_Guide.txt - Functionality guide of the app
 
 Server_v0.9.zip - Server code
