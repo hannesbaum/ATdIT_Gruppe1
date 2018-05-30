@@ -1,36 +1,37 @@
-Funktionalitäten der App:
+FunktionalitÃ¤ten der App:
 
-Für die Funktionalitäten in der App muss parallel die Server.java Datei ausgeführt werden.
+FÃ¼r die FunktionalitÃ¤ten in der App muss parallel die Server.java Datei ausgefÃ¼hrt werden.
 
 
-Die Startseite der App zeigt die aktuellen Termine für den Tag an.
+Die Startseite der App zeigt die aktuellen Termine fÃ¼r den Tag an.
 Hier werden nur Termine angezeigt, welche nicht mindestens seit 30 Minuten abgelaufen sind.
 
 Einen Termin kann man anklicken um auf die Detailseite des Termins zu kommen.
-Dort sind verschiedene weitere Optionen möglich:
+Dort sind verschiedene weitere Optionen mÃ¶glich:
 
-1) "Ablesen": Hier kann man für den Termin die entsprechenden Heizungszählerwerte eingeben und an den Server schicken.
-Es gibt soviele Ableseformulare wie Zähler in der Wohnung des Kunden. Sollte während der Eingabe die Internetverbindung abbrechen, werden die Datensätze lokal gespeichert, die App darf nun nur nicht vollständig geschlossen werden. Bei der nächsten Internetverbindung versucht die App, die Daten an den Server zu schicken.
+1) "Ablesen": Hier kann man fÃ¼r den Termin die entsprechenden HeizungszÃ¤hlerwerte eingeben und an den Server schicken.
+Es gibt so viele Ableseformulare, wie ZÃ¤hler in der Wohnung des Kunden. Sollte wÃ¤hrend der Eingabe die Internetverbindung abbrechen, werden die DatensÃ¤tze lokal gespeichert, die App darf nun nur nicht vollstÃ¤ndig geschlossen werden. Bei der nÃ¤chsten Internetverbindung versucht die App, die Daten an den Server zu schicken.
 
-2) "Kontakt": Hier kann man Kontakt zum Kunden aufnehmen. Dabei sind die Telefonnummern anklickbar und führen in die Telefon-App.
-Die Knöpfe im unteren Bereich erstellen eine vorgefertigte SMS mit individuellem Kundennamen um ein gewisses Anliegen zu vermitteln.
-Es ist durchaus möglich, dass der Emulator die neuen SMS-Texte nicht nachlädt. Bei einem Neustart der App wird der individuelle Text sichtbar.
+2) "Kontakt": Hier kann man Kontakt zum Kunden aufnehmen. Dabei sind die Telefonnummern anklickbar und fÃ¼hren in die Telefon-App.
+Die KnÃ¶pfe im unteren Bereich erstellen eine vorgefertigte SMS mit individuellem Kundennamen um ein gewisses Anliegen zu vermitteln.
+Es ist durchaus mÃ¶glich, dass der Emulator die neuen SMS-Texte nicht nachlÃ¤dt. Bei einem Neustart der App wird der individuelle Text jedoch  sichtbar.
 
-3) "Alte Werte bearbeiten": Hier können bereits eingegebene Werte etwa bei Fehlern editiert werden. Diese Funktion ist im Prototypen nicht implementiert.
+3) "Alte Werte bearbeiten": Hier kÃ¶nnen bereits eingegebene Werte etwa bei Fehlern editiert werden. Diese Funktion ist im Prototypen nicht implementiert.
 
 
-Die App verfügt über einen sog. Navigation Drawer. Dieser kann entweder über eine "Wisch-Bewegung" von links oder über den Menüknopf oben links aktiviert werden.
+Die App verfÃ¼gt Ã¼ber einen sog. Navigation Drawer. Dieser kann entweder Ã¼ber eine "Wisch-Bewegung" von links oder Ã¼ber den MenÃ¼knopf oben links aktiviert werden.
 
 Die "Home"-Seite entspricht der Startseite der App. Bei einem Klick auf diesen Button wird erneut eine Serververbindung aufgebaut und die Seite damit aktualisiert.
 
-Der "Termine-verwalten" Knoft führt ebenfalls eine Aktualisierung der App durch (Serverabfrage). Hier werden alle nicht terminierten Termine angezeigt. 
+Der "Termine-verwalten"-Knopf fÃ¼hrt ebenfalls eine Aktualisierung der App durch (Serverabfrage). Hier werden alle nicht terminierten Termine angezeigt. 
 
-Um einen Termin zu terminieren genügt ein Klick auf den jeweiligen Termin und die Bestätigung. Eine Fehlersicherung (man kann theoretisch erneut auf den Termin klicken und somit die Datensätze manipulieren) ist leider noch nicht umgesetzt, ein Ansatz dafür existiert jedoch bereits.
+Um einen Termin zu terminieren genÃ¼gt ein Klick auf den jeweiligen Termin und die BestÃ¤tigung. Eine Fehlersicherung (man kann theoretisch erneut auf den Termin klicken und somit die DatensÃ¤tze manipulieren) ist leider noch nicht umgesetzt, ein Ansatz dafÃ¼r existiert jedoch bereits.
 Indem man die Seite aktualisiert verschwindet nun ein terminierter Termin aus der Liste der "Termine verwalten".
 
-Der Punkt "Einstellungen" soll App-Einstellungen zur Verfügung stellen, ist jedoch in dieser Demo-App nicht weiter ausgeführt.
+Der Punkt "Einstellungen" soll App-Einstellungen zur VerfÃ¼gung stellen, ist jedoch in dieser Demo-App nicht weiter ausgefÃ¼hrt.
 
-Um die Funktionalität der Fehlermeldungen bei fehlender Internetverbindung bzw. fehlender Serververbindung zu testen kann im Emulator die Internetverbindung (WLAN) ausgeschaltet werden. Die Servermeldung taucht auf, falls die Server.java Datei parallel nicht ausgeführt wird.
+Um die FunktionalitÃ¤t der Fehlermeldungen bei fehlender Internetverbindung bzw. fehlender Serververbindung zu testen kann im Emulator die Internetverbindung (WLAN) ausgeschaltet werden. Die Servermeldung taucht auf, falls die Server.java Datei parallel nicht ausgefÃ¼hrt wird.
 
 
-Über ein sehr einfaches "Logbuch", welches in der Konsole der Server.java Applikation läuft, kann man den Datenaustausch zwischen Server und App beobachten, insbesondere bei Anfragen zu den Daten aus der DB oder bei dem "Upload" aus der App an den Server. Diese Daten werden aktuell noch nicht in die Datenbank geladen sonder verbleiben momentan nur auf dem Server-Level.
+Ãœber ein sehr einfaches "Logbuch", welches in der Konsole der Server.java Applikation lÃ¤uft, kann man den Datenaustausch zwischen Server und App beobachten, insbesondere bei Anfragen zu den Daten aus der DB oder bei dem "Upload" aus der App an den Server. Diese Daten werden aktuell noch nicht in die Datenbank geladen sondern verbleiben momentan nur in der Server-Klasse.
+
