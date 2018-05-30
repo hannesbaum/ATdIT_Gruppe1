@@ -16,6 +16,9 @@ sqlite-jdbc-3.21.0.jar - SQLite DB for Application
 
 UML_Diagramm.vsdx - UML Diagram (if not readable, use .jpg Files)
 
+ATdIT.mp4 - The low fidelity prototype of our app design
+
+Ausblick_Gruppe1.docx - Further ideas we came up with but were not able to realize into every detail
 
 Other files are our groups' research and basic information about the project.
 See the issues for further information, e.g. the ER-Diagram.
