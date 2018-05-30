@@ -25,7 +25,7 @@ Die "Home"-Seite entspricht der Startseite der App. Bei einem Klick auf diesen B
 
 Der "Termine-verwalten"-Knopf führt ebenfalls eine Aktualisierung der App durch (Serverabfrage). Hier werden alle nicht terminierten Termine angezeigt. 
 
-Um einen Termin zu terminieren genügt ein Klick auf den jeweiligen Termin und die Bestätigung. Eine Fehlersicherung (man kann theoretisch erneut auf den Termin klicken und somit die Datensätze manipulieren) ist leider noch nicht umgesetzt, ein Ansatz dafür existiert jedoch bereits.
+Um einen Termin zu terminieren genügt ein Klick auf den jeweiligen Termin und die Bestätigung.
 Indem man die Seite aktualisiert verschwindet nun ein terminierter Termin aus der Liste der "Termine verwalten".
 
 Der Punkt "Einstellungen" soll App-Einstellungen zur Verfügung stellen, ist jedoch in dieser Demo-App nicht weiter ausgeführt.
